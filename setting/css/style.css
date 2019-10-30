@@ -1,0 +1,70 @@
+.jimu-widget-timesliderplus-setting {
+	margin-top: 20px;
+}
+
+.jimu-widget-timesliderplus-setting .clearFix {
+	*overflow: hidden;
+	*zoom: 1;
+}
+.jimu-widget-timesliderplus-setting .clearFix:after {
+	display: table;
+	content: "";
+	width: 0;
+	clear: both;
+}
+
+.jimu-widget-timesliderplus-setting .hide {
+	display: none !important;
+}
+.jimu-widget-timesliderplus-setting .items{
+	margin-top: 18px;
+}
+.jimu-widget-timesliderplus-setting .dateAndTimeFormat .tips{
+	font-family: 'Avenir Light';
+	font-size: 14px;
+	color: #000000;
+	margin-bottom: 4px;
+}
+.jimu-widget-timesliderplus-setting .timeFormats .dijitSelect {
+	width:220px;
+	height:36px;
+	border-color: #cfcfcf;
+	background-color: #fff;
+}
+.jimu-widget-timesliderplus-setting .timeFormats .dijitSelectFocused .dijitButtonContents{
+	border-color: #cfcfcf;
+} 
+.jimu-widget-timesliderplus-setting .dijitSelectHover .dijitButtonContents {
+	border-color:#b5bcc7;
+}
+.jimu-widget-timesliderplus-setting .dijitSelect .dijitArrowButton{
+	background-color: #fff;
+	background-image: none;
+}
+
+.jimu-widget-timesliderplus-setting .customdate-container{
+	position: relative;
+}
+.jimu-widget-timesliderplus-setting .customdate-container .dijitTextBox {
+	width:260px;
+	height:36px;
+	margin: 0 20px;
+}
+.jimu-widget-timesliderplus-setting .customdate-container .help-icon{
+	height: 16px;
+	width: 16px;
+	background: url("images/help.svg") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+	position: absolute;
+	right: 35px;
+	top: 11px;
+}
+.jimu-rtl .jimu-widget-timesliderplus-setting .customdate-container .help-icon{
+	left: 35px;
+	right: auto;
+}
+.jimu-widget-timesliderplus-setting .jimu-rtl .help-icon{
+	right: auto;
+	left: 32px;
+}

@@ -1,0 +1,356 @@
+.jimu-widget-timesliderplus{
+	position: absolute;
+	background: rgba(0,0,0,0.55);
+	border-radius: 3px;
+	padding: 0 14px;
+	width: 360px !important;
+	z-index: 102 !important;
+	/*top:auto !important;
+	bottom:20px !important;
+	overflow: hidden;*/
+	transition: height 0.5s ease;
+	-moz-transition: height 0.5s ease;
+	-webkit-transition: height 0.5s ease;
+	-o-transition: height 0.5s ease;
+}
+.jimu-rtl .jimu-widget-timesliderplus{
+	right: auto !important;
+}
+.jimu-widget-timesliderplus .esriTimeSlider{
+	z-index: 99;
+}
+.jimu-widget-timesliderplus .no-time-content,
+.jimu-widget-timesliderplus .time-content{
+	position: relative;
+	display: none;
+	z-index: 0;
+}
+.jimu-widget-timesliderplus .no-time-content{
+	height: 30px;
+	padding: 0px 10px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+}
+.jimu-widget-timesliderplus .time-content{
+	height: 72px;
+}
+.jimu-widget-timesliderplus .label-container{
+	padding: 10px 15px 10px 10px;
+	font-size: 12px;
+}
+.jimu-widget-timesliderplus .drag-handler{
+	cursor: move;
+}
+
+.jimu-widget-timesliderplus .time-extent{
+	color: #fff;
+	font-family: AvenirNext-Medium;
+	color: #FFFFFF;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.jimu-widget-timesliderplus .layer-labels{
+	opacity: 0.8;
+	font-family: AvenirNext-Regular;
+	color: #FFFFFF;
+}
+.jimu-widget-timesliderplus .slider-content{
+	position: absolute;
+	max-width: 657px;
+	margin: auto;
+	bottom: 20px;
+	width: 100%;
+	height: 32px;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-o-transition: opacity 0.5s ease;
+}
+.jimu-widget-timesliderplus .slider-content .esriTimeSlider{
+	width: 224px;
+	margin: 5px 8px 0 8px;
+}
+.jimu-widget-timesliderplus .speed-container{
+	position: relative;
+	height: 16px;
+	width: 28px;
+	cursor: pointer;
+	margin: 0 10px;
+	bottom: -2px;
+}
+.jimu-widget-timesliderplus .speed-menu{
+	width: 75px;
+	position: absolute;
+	z-index: 104;
+	bottom: 27px;
+	text-align: left;
+	font-size: 12px;
+	background: #FFFFFF;
+	color: #000000;
+	box-shadow: 0 2px 4px 0;
+}
+.jimu-rtl .jimu-widget-timesliderplus .speed-menu{
+	text-align: right;
+}
+.jimu-widget-timesliderplus .speed-menu-item{
+	width: 100%;
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 10px;
+}
+.jimu-rtl .jimu-widget-timesliderplus .speed-menu-item{
+	padding-left: 0;
+	padding-right: 10px;
+}
+.jimu-widget-timesliderplus .item-label {
+	border-bottom: 1px solid #c9e0f6;
+}
+.jimu-widget-timesliderplus .speed-menu-item:hover{
+	background: #EEEEEE;
+}
+.jimu-widget-timesliderplus .speed-label{
+	width: 28px;
+	height: 16px;
+	font-family: Avenir-Medium;
+	font-size: 12px;
+	color: #000000;
+	text-align: center;
+	opacity: 0.6;
+	background: #FFFFFF;
+	border-radius: 100px;
+	position: absolute;
+}
+.jimu-widget-timesliderplus .speed-label:hover{
+	opacity: 1;
+	background: #FFFFFF;
+}
+
+/*******************************************************************/
+.jimu-widget-timesliderplus .esriTimeSlider .tsTicks{
+	display: none;
+}
+.jimu-widget-timesliderplus .esriTimeSlider .ts {
+	padding: 0;/*for FF*/
+}
+
+.jimu-widget-timesliderplus.mobile {
+	width:100% !important;
+	top:auto !important;
+	bottom:0 !important;
+	left:0 !important;
+}
+
+.jimu-widget-timesliderplus.mobile .esriTimeSlider{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.jimu-widget-timesliderplus.mobile .slider-content{
+	bottom: 9px;
+}
+.jimu-widget-timesliderplus.mobile .slider-node-container{
+	width:100%;
+}
+
+.jimu-widget-timesliderplus.mobile .label-container .time-extent,
+.jimu-widget-timesliderplus.mobile .label-container .layer-labels{
+	text-align: center;
+}
+
+/**********************************************************************/
+.jimu-widget-timesliderplus .hide {
+	display: none !important;
+}
+.jimu-widget-timesliderplus .clearFix {
+	*overflow: hidden;
+	*zoom: 1;
+}
+.jimu-widget-timesliderplus .clearFix:after {
+	display: table;
+	content: "";
+	width: 0;
+	clear: both;
+}
+
+.jimu-widget-timesliderplus .close-btn{
+	height: 10px;
+	width: 10px;
+	background: url("images/close.svg") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+	vertical-align: middle;
+	position: absolute;
+	right:14px;
+	top:14px;
+	z-index: 1;
+}
+.jimu-rtl .jimu-widget-timesliderplus .close-btn{
+	right:auto;
+	left:14px;
+}
+
+.jimu-widget-timesliderplus .esriTimeSlider .dijitInline.dijitButtonNode{
+	background: transparent;
+	border: none;
+	box-shadow: none
+}
+
+.jimu-widget-timesliderplus .esriTimeSlider .dijitSliderImageHandleH{
+	top:-8px
+}
+.jimu-widget-timesliderplus .esriTimeSlider .dojoxRangeSlider .dijitSliderImageHandleH{
+	height: 8px;
+	width: 8px;
+	background: url("images/track.svg") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+}
+.jimu-widget-timesliderplus .esriTimeSlider .dojoxRangeSlider .dijitSliderImageHandleH:hover {
+	background: url("images/track_hover.svg") no-repeat;
+}
+
+.jimu-widget-timesliderplus .dijitSliderLeftBumper{
+	border-radius: 10px 0 0 10px;
+}
+.jimu-widget-timesliderplus .dijitSliderRightBumper{
+	border-radius: 0 10px 10px 0;
+}
+.jimu-widget-timesliderplus .dijitSlider .dijitSliderProgressBarH,
+.jimu-widget-timesliderplus .dijitSlider .dijitSliderLeftBumper{
+	background-image: none;
+	background-color: #24B5CC;
+}
+.jimu-widget-timesliderplus .dijitSlider.dojoxRangeSlider .dijitSliderLeftBumper{
+	background: #FFFFFF !important;
+}
+
+.jimu-widget-timesliderplus .btns-container{
+	margin-left: auto;
+	margin-bottom: 12px;
+}
+.jimu-widget-timesliderplus .previousBtn {
+	height: 20px;
+	width: 20px;
+	background: url("images/skip-previous.svg") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+}
+.jimu-widget-timesliderplus .previousBtn:hover {
+	background: url("images/skip-previous_hover.svg") no-repeat;
+}
+.jimu-widget-timesliderplus .nextBtn {
+	height: 20px;
+	width: 20px;
+	background: url("images/skip-next.svg") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+}
+.jimu-widget-timesliderplus .nextBtn:hover {
+	background: url("images/skip-next_hover.svg") no-repeat;
+}
+
+.jimu-widget-timesliderplus .playBtn{
+	height: 20px;
+	width: 20px;
+	background: url("images/play.svg") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+	margin: 0px 6px;
+}
+.jimu-widget-timesliderplus .playBtn:hover {
+	background: url("images/play_hover.svg") no-repeat;
+}
+
+.jimu-widget-timesliderplus .playBtn.pause{
+	height: 20px;
+	width: 20px;
+	background: url("images/pause.svg") no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+}
+.jimu-widget-timesliderplus .playBtn.pause:hover {
+	background: url("images/pause_hover.svg") no-repeat;
+}
+
+.check{
+	background: url("images/check.svg") no-repeat;
+	width: 18px;
+	height: 12px;
+	display: inline-block;
+	margin: 5px;
+}
+
+/************************** mini-mode ******************************/
+.jimu-widget-timesliderplus.mini-mode {
+	height:35px !important;
+	background: rgba(0,0,0,0.4);
+}
+.jimu-widget-timesliderplus.mini-mode .time-content{
+	height: 35px;
+}
+
+.jimu-widget-timesliderplus.mini-mode .label-container{
+	padding: 0;
+}
+.jimu-widget-timesliderplus.mini-mode .label-container .layer-labels{
+	display: none !important;
+}
+
+.jimu-widget-timesliderplus.mini-mode .slider-content{
+	opacity: 0;/*for css animation*/
+}
+
+.jimu-widget-timesliderplus.mini-mode .slider-content .esriTimeSlider{
+	margin: 0;
+	bottom: 0;
+}
+
+.jimu-widget-timesliderplus.mini-mode .slider-content .dijitSlider .dijitSliderRemainingBarH,
+.jimu-widget-timesliderplus.mini-mode .slider-content .dijitSlider .dijitSliderRightBumper,
+.jimu-widget-timesliderplus.mini-mode .dijitSlider.dojoxRangeSlider .dijitSliderLeftBumper,
+.jimu-widget-timesliderplus.mini-mode .dijitSlider.dojoxRangeSlider .dijitSliderBottomBumper{
+	background-color: #333333;
+	border-color: #333333;
+}
+
+.jimu-widget-timesliderplus.mini-mode .close-btn,
+.jimu-widget-timesliderplus.mini-mode .btns-container,
+.jimu-widget-timesliderplus.mini-mode .speed-container{
+	display: none;
+}
+.jimu-widget-timesliderplus.mini-mode .esriTimeSlider .dijitSliderImageHandleH{
+	display: none;
+}
+
+.jimu-widget-timesliderplus.mini-mode .time-extent{
+	padding: 6px;
+	text-align: center;
+}
+
+.jimu-widget-timesliderplus.mini-mode .slider-content .esriTimeSlider{
+	bottom: -45px !important;
+	width: 100%;
+}
+.mini-mode.mobile .slider-content .esriTimeSlider{
+	bottom: -33px;
+}
+
+.jimu-widget-timesliderplus.mini-mode .slider-node-container{
+	width:100%;
+	overflow: hidden;
+}
+
+/****************    DartTheme    ****************/
+.DartTheme .jimu-widget-timesliderplus .dijitSliderImageHandle:after{
+	display:none;
+}
+/****************    LaunchpadTheme    ****************/
+.LaunchpadTheme .jimu-widget-timesliderplus{
+	position: absolute;
+}
+.LaunchpadTheme .jimu-widget-timesliderplus .dijitSliderImageHandle:after{
+	display:none;
+}
